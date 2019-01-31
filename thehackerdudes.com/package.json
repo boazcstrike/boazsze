@@ -1,0 +1,24 @@
+{
+  "name": "thehackerdudes.com",
+  "version": "0.0.1",
+  "description": "The Hacker Dudes' Alpha Version of Login Auth",
+  "main": "login.php",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boazcstrike/thehackerdudes.git"
+  },
+  "keywords": [
+    "the",
+    "hacker",
+    "dudes"
+  ],
+  "author": "rence, bo, jai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boazcstrike/thehackerdudes/issues"
+  },
+  "homepage": "https://github.com/boazcstrike/thehackerdudes#readme"
+}

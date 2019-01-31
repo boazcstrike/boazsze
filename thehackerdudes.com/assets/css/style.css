@@ -1,0 +1,159 @@
+body{
+	background-color:#333;
+/*	overflow:hidden;*/
+	background-color: rgb(25,25,25); 
+	max-width: 100vw;
+}
+.content{
+	width:73%;
+	margin:0 auto;
+}
+.ip-wrapper{
+	background-color:black;
+}
+.ip-text{
+	color:#d4e5e3;
+	font-size: .75em;
+	font-family: "Noticia Text", sans-serif;
+}
+.welcome-div{
+	background-color:rgb(25,25,25); 
+	min-height: 100vh;
+	padding-top: 5em;
+	min-width: 265px;
+}
+.welcome-wrapper{
+	margin:0 auto;
+	text-align: center;
+}
+.welcome-text{
+	color:#fff;
+	font-size: 1.8em;
+	font-family: 'Anonymous Pro', monospace; 
+/*	font-family: "Courier", sans-serif;*/
+	letter-spacing: 2px;
+}
+.ip{
+	color:#999999;
+	font-size: 1em;
+	font-family: "Courier", sans-serif;
+}
+.ip h3{
+	margin-top: -6em;
+	margin-bottom: 4.8em;
+	text-align: center;
+	color:lime;
+	font-size: .68em;
+	letter-spacing: 5px;
+	font-family: "Courier", sans-serif;
+}
+.ip-label p{
+	text-align: right;
+}
+.ip-details p{
+	/*color:#13B202;*/
+	color:#fff;
+}
+.hackerdudes-text{
+	color:lime;
+	font-size: 2.2em;
+	font-family: 'Anonymous Pro', monospace; 
+/*	font-family: "Courier", sans-serif;*/
+	letter-spacing: 2px;
+	max-width: 11em;
+}
+.cp{
+	display:none;
+}
+/*start animation of typing*/
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+.no-line{
+	top: 50%; 
+    width: auto;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter{
+	margin-top: .6em;
+  	animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+.anim-typewriter-small{
+	margin-top: .8em;
+  	animation: typewriter 1s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(20) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/*random*/
+.center-text{
+	text-align: center;
+}
+.r-div{
+	margin-top: -5em;
+	background-color:rgb(25,25,25); 
+	min-height: 20em;
+	padding-top: 5em;
+	min-width: 860px;
+}
+
+/*cellphones*/
+@media(max-width: 700px){
+	.content{
+		width:90%;
+		margin:0 auto;
+	}
+	.welcome-text{
+		font-size: 1em;
+		letter-spacing: 1.2px;
+	}
+	.hackerdudes-text{
+		font-size: 1.2em;
+		letter-spacing: 1.5px;
+		max-width: 11.5em;
+	}
+	.ip h3{
+		margin-top: -1em;
+		margin-bottom: 4.8em;
+		text-align: center;
+		color:lime;
+		font-size: .68em;
+		letter-spacing: 5px;
+		font-family: "Courier", sans-serif;
+	}
+	.ip-label p{
+		text-align: right;
+		font-size: 0.5em; 
+		display:none;
+	}
+	.ip-details p{
+		font-size: 0.5em; 
+		text-align: center;
+		/*display:none;*/
+	}
+	.cp{
+		display: show;
+	}
+}
